@@ -1,4 +1,4 @@
-# Name
+# Getting Started with Spring Cloud GCP for Cloud SQL - MySQL
 
 Overview
 
