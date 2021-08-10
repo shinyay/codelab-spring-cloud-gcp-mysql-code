@@ -1,6 +1,6 @@
 # Getting Started with Spring Cloud GCP for Cloud SQL - MySQL
 
-Overview
+This lab makes you to develop an app with TDD.
 
 ## Description
 
