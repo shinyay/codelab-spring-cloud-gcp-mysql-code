@@ -4,6 +4,8 @@ This lab makes you to develop an app with TDD.
 
 ## Description
 ### Dependencies
+- com.google.cloud
+  - `spring-cloud-gcp-starter`
 
 ### Prerequisite
 
