@@ -19,6 +19,8 @@ dependencyManagement {
 ```
 
 ### Prerequisite
+#### Cloud SQL - MySQL Instance
+
 
 ## Demo
 
