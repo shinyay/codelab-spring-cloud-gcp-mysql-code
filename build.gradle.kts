@@ -17,6 +17,7 @@ repositories {
 
 extra["springCloudGcpVersion"] = "2.0.3"
 extra["springCloudVersion"] = "2020.0.3"
+extra["testcontainersVersion"] = "1.15.3"
 
 dependencies {
 	implementation("com.google.cloud:spring-cloud-gcp-starter")
@@ -24,12 +25,15 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	runtimeOnly("mysql:mysql-connector-java")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("org.testcontainers:junit-jupiter")
+	testImplementation("org.testcontainers:mysql")
 }
 
 dependencyManagement {
 	imports {
 		mavenBom("com.google.cloud:spring-cloud-gcp-dependencies:${property("springCloudGcpVersion")}")
 		mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
+		mavenBom("org.testcontainers:testcontainers-bom:${property("testcontainersVersion")}")
 	}
 }
 
