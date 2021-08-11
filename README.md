@@ -7,6 +7,15 @@ This lab makes you to develop an app with TDD.
 - com.google.cloud
   - `spring-cloud-gcp-starter`
 
+```kotlin
+dependencyManagement {
+	imports {
+		mavenBom("com.google.cloud:spring-cloud-gcp-dependencies:${property("springCloudGcpVersion")}")
+		mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
+	}
+}
+```
+
 ### Prerequisite
 
 ## Demo
