@@ -1,6 +1,8 @@
 # Getting Started with Spring Cloud GCP for Cloud SQL - MySQL
 
-This lab makes you to develop an app with TDD.
+Spring Cloud GCP offers a wide collection of libraries that make it easier to use Google Cloud Platform from Spring Framework applications.
+
+This lab shows Spring Cloud GCP with Cloud SQL - MySQL.
 
 ## Description
 ### Dependencies
