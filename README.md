@@ -34,6 +34,11 @@ $ gcloud auth login
 $ gcloud config set project ${PROJECT_ID}
 ```
 
+Verification
+```shell
+$ gcloud config get-value project
+```
+
 ## Demo
 
 ## Features
