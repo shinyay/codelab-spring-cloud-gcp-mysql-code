@@ -39,6 +39,11 @@ Verification
 $ gcloud config get-value project
 ```
 
+#### Enable Cloud SQL API
+```shell
+$ gcloud services enable sqladmin.googleapis.com
+```
+
 ## Demo
 
 ## Features
