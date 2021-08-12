@@ -44,6 +44,16 @@ $ gcloud config get-value project
 $ gcloud services enable sqladmin.googleapis.com
 ```
 
+#### Create MySQL Instance
+```shell
+$ gcloud sql instances create my-mysql \
+    --database-version=MYSQL_5_7 \
+    --region=us-central1 \
+    --cpu=2 \
+    --memory=4G \
+    --root-password=[ROOT_PASSWORD]
+```
+
 ## Demo
 
 ## Features
