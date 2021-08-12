@@ -29,7 +29,10 @@ dependencyManagement {
 $ gcloud auth login
 ```
 
-#### 
+#### Set Project ID
+```shell
+$ gcloud config set project ${PROJECT_ID}
+```
 
 ## Demo
 
