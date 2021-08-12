@@ -43,6 +43,11 @@ $ gcloud config get-value project
 ```shell
 $ gcloud services enable sqladmin.googleapis.com
 ```
+```shell
+$ vim ~/.config/fish/config.fish
+
+set PATH /usr/local/share/google-cloud-sdk/bin $PATH
+```
 
 #### Install Cloud SQL Proxy
 ```shell
