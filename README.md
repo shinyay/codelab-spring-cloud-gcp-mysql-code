@@ -58,6 +58,11 @@ $ gcloud sql instances create my-mysql \
 ```shell
 $ gcloud sql databases create my-db --instance=my-mysql
 ```
+
+#### Connect MySQL Instace
+```shell
+
+```
 ## Demo
 
 ## Features
