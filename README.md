@@ -44,6 +44,11 @@ $ gcloud config get-value project
 $ gcloud services enable sqladmin.googleapis.com
 ```
 
+#### Install Cloud SQL Proxy
+```shell
+$ sudo gcloud components install cloud_sql_proxy
+```
+
 #### Create MySQL Instance
 ```shell
 $ gcloud sql instances create my-mysql \
