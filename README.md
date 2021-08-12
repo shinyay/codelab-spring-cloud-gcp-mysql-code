@@ -24,7 +24,12 @@ dependencyManagement {
 
 ### Prerequisite
 #### Cloud SQL - MySQL Instance
+#### Login to Google Cloud
+```shell
+$ gcloud auth login
+```
 
+#### 
 
 ## Demo
 
