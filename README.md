@@ -69,7 +69,7 @@ $ gcloud sql instances create my-mysql \
 $ gcloud sql databases create my-db --instance=my-mysql
 ```
 
-#### Connect MySQL Instace
+#### Connect MySQL Instance
 ```shell
 gcloud beta sql connect my-mysql
 ```
