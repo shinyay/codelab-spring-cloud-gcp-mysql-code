@@ -94,6 +94,16 @@ CREATE TABLE department (
 );
 ```
 
+#### Add User to MySQL Instance
+The MySQL instance has the only built-in root user.
+```shell
+$ gcloud sql users list --instance=my-mysql
+
+NAME  HOST  TYPE
+root  %     BUILT_IN
+```
+
+
 ## Demo
 
 ## Features
