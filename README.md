@@ -119,9 +119,20 @@ root         %     BUILT_IN
 Grant the user create above to access the specific Database.
 
 ```shell
-
+mysql> GRANT ALL ON codelab.* TO 'mysql-guest'@'%';
 ```
+```shell
+mysql> select user, host from mysql.user;
 
++---------------+-----------+
+| user          | host      |
++---------------+-----------+
+| mysql-guest   | %         |
+| root          | %         |
+| mysql.session | localhost |
+| mysql.sys     | localhost |
++---------------+-----------+
+```
 ## Demo
 
 ## Features
