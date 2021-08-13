@@ -103,6 +103,17 @@ NAME  HOST  TYPE
 root  %     BUILT_IN
 ```
 
+```shell
+$ gcloud sql users create mysql-guest --instance=my-mysql --host=% --password=[PASSWORD]
+```
+
+```shell
+$ gcloud sql users list --instance=my-mysql
+
+NAME         HOST  TYPE
+mysql-guest  %     BUILT_IN
+root         %     BUILT_IN
+```
 
 ## Demo
 
