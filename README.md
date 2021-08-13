@@ -66,7 +66,7 @@ $ gcloud sql instances create my-mysql \
 
 #### Create Database
 ```shell
-$ gcloud sql databases create my-db --instance=my-mysql
+$ gcloud sql databases create codelab --instance=my-mysql
 ```
 
 #### Connect MySQL Instance
@@ -113,6 +113,13 @@ $ gcloud sql users list --instance=my-mysql
 NAME         HOST  TYPE
 mysql-guest  %     BUILT_IN
 root         %     BUILT_IN
+```
+
+#### Grant User to Access Database
+Grant the user create above to access the specific Database.
+
+```shell
+
 ```
 
 ## Demo
