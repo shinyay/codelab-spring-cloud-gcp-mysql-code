@@ -23,13 +23,13 @@ dependencyManagement {
 ```
 
 ### Prerequisite
-#### Cloud SQL - MySQL Instance
-#### Login to Google Cloud
+#### 1. Cloud SQL - MySQL Instance
+#### 1.1. Login to Google Cloud
 ```shell
 $ gcloud auth login
 ```
 
-#### Set Project ID
+#### 1.2. Set Project ID
 ```shell
 $ gcloud config set project ${PROJECT_ID}
 ```
@@ -39,7 +39,7 @@ Verification
 $ gcloud config get-value project
 ```
 
-#### Enable Cloud SQL API
+#### 1.3. Enable Cloud SQL API
 ```shell
 $ gcloud services enable sqladmin.googleapis.com
 ```
@@ -49,12 +49,12 @@ $ vim ~/.config/fish/config.fish
 set PATH /usr/local/share/google-cloud-sdk/bin $PATH
 ```
 
-#### Install Cloud SQL Proxy
+#### 1.4. Install Cloud SQL Proxy
 ```shell
 $ sudo gcloud components install cloud_sql_proxy
 ```
 
-#### Create MySQL Instance
+#### 1.5. Create MySQL Instance
 ```shell
 $ gcloud sql instances create my-mysql \
     --database-version=MYSQL_5_7 \
@@ -64,17 +64,17 @@ $ gcloud sql instances create my-mysql \
     --root-password=[ROOT_PASSWORD]
 ```
 
-#### Create Database
+#### 1.6. Create Database
 ```shell
 $ gcloud sql databases create codelab --instance=my-mysql
 ```
 
-#### Connect MySQL Instance
+#### 1.7. Connect MySQL Instance
 ```shell
 $ gcloud beta sql connect my-mysql --user=root --quiet
 ```
 
-#### Create Table
+#### 1.8. Create Table
 ```shell
 mysql> use my-db
 ```
@@ -94,7 +94,7 @@ CREATE TABLE department (
 );
 ```
 
-#### Add User to MySQL Instance
+#### 1.9. Add User to MySQL Instance
 The MySQL instance has the only built-in root user.
 ```shell
 $ gcloud sql users list --instance=my-mysql
@@ -115,7 +115,7 @@ mysql-guest  %     BUILT_IN
 root         %     BUILT_IN
 ```
 
-#### Grant User to Access Database
+#### 1.10. Grant User to Access Database
 Grant the user create above to access the specific Database.
 
 ```shell
@@ -148,7 +148,7 @@ mysql> show grants for 'mysql-guest'@'%';
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-#### Retrieve Connection Name
+#### 1.11. Retrieve Connection Name
 ```shell
 $ gcloud sql instances describe my-mysql --format='value(connectionName)'
 ```
