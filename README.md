@@ -11,6 +11,8 @@ This lab shows Spring Cloud GCP with Cloud SQL - MySQL.
 - `mysql:mysql-connector-java`
 - `org.testcontainers:junit-jupiter`
 - `org.testcontainers:mysql`
+- org.springframework.boot
+  - `spring-boot-starter-data-jpa`
 
 ```kotlin
 dependencyManagement {
