@@ -81,6 +81,8 @@ $ vim ~/.config/fish/config.fish
 set PATH /usr/local/share/google-cloud-sdk/bin $PATH
 ```
 #### 1.5. Create MySQL Instance
+Configure the Machine Type as Lightweight
+
 ```shell
 $ gcloud sql instances create my-mysql \
     --database-version=MYSQL_5_7 \
