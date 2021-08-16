@@ -83,6 +83,12 @@ set PATH /usr/local/share/google-cloud-sdk/bin $PATH
 #### 1.5. Create MySQL Instance
 Configure the Machine Type as Lightweight
 
+The following sample:
+
+|Instance Name|
+|-------------|
+|my-mysql|
+
 ```shell
 $ gcloud sql instances create my-mysql \
     --database-version=MYSQL_5_7 \
@@ -93,6 +99,12 @@ $ gcloud sql instances create my-mysql \
 ```
 
 #### 1.6. Create Database
+The following sample:
+
+|Database Name|
+|-------------|
+|codelab|
+
 ```shell
 $ gcloud sql databases create codelab --instance=my-mysql
 ```
@@ -100,6 +112,8 @@ $ gcloud sql databases create codelab --instance=my-mysql
 #### 1.7. Connect MySQL Instance
 ```shell
 $ gcloud beta sql connect my-mysql --user=root --quiet
+
+Connecting to database with SQL user [root].Enter password: *****
 ```
 
 #### 1.8. Create Table
