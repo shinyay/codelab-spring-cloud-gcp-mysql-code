@@ -36,6 +36,8 @@ $ gcloud auth login
 ```
 
 #### 1.2. Set Project ID
+You can set the default value for gcloud-cli.
+
 ```shell
 $ gcloud config set project ${PROJECT_ID}
 ```
@@ -46,20 +48,21 @@ $ gcloud config get-value project
 ```
 
 #### 1.3. Enable Cloud SQL API
+Before starting Cloud SQL, you must enable the `Cloud SQL Admin API`.
+
 ```shell
 $ gcloud services enable sqladmin.googleapis.com
-```
-```shell
-$ vim ~/.config/fish/config.fish
-
-set PATH /usr/local/share/google-cloud-sdk/bin $PATH
 ```
 
 #### 1.4. Install Cloud SQL Proxy
 ```shell
 $ sudo gcloud components install cloud_sql_proxy
 ```
+```shell
+$ vim ~/.config/fish/config.fish
 
+set PATH /usr/local/share/google-cloud-sdk/bin $PATH
+```
 #### 1.5. Create MySQL Instance
 ```shell
 $ gcloud sql instances create my-mysql \
