@@ -29,6 +29,8 @@ dependencyManagement {
 By the following steps, we will create Cloud SQL - MySQL instance, Database and Table on it.
 
 #### 1.1. Login to Google Cloud
+It authorizes gcloud-cli to access the Cloud Platform with Google user credentials.
+
 ```shell
 $ gcloud auth login
 ```
