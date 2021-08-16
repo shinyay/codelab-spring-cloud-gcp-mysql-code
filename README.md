@@ -26,6 +26,8 @@ dependencyManagement {
 
 ### Prerequisite
 #### 1. Cloud SQL - MySQL Instance
+By the following steps, we will create Cloud SQL - MySQL instance, Database and Table on it.
+
 #### 1.1. Login to Google Cloud
 ```shell
 $ gcloud auth login
