@@ -55,6 +55,16 @@ $ gcloud services enable sqladmin.googleapis.com
 ```
 
 #### 1.4. Install Cloud SQL Proxy
+
+Cloud SQL Proxy provides the following functions:
+
+- **Secure Connections**
+  - It automatically encrypts traffic to and from the database using TLS 1.2 with 128-bit AES cipher
+- **Connection Management with ease**
+  - It handles authentication with Cloud SQL
+
+![sql-proxy](https://user-images.githubusercontent.com/3072734/129500202-59397ef3-c672-4ba3-8d51-ce753e747780.png)
+
 ```shell
 $ sudo gcloud components install cloud_sql_proxy
 ```
