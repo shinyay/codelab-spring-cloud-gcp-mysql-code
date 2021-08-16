@@ -54,6 +54,13 @@ Before starting Cloud SQL, you must enable the `Cloud SQL Admin API`.
 $ gcloud services enable sqladmin.googleapis.com
 ```
 
+Enable Compute Engine API
+```shell
+$ gcloud services enable compute.googleapis.com
+$ gcloud services enable oslogin.googleapis.com
+```
+
+
 #### 1.4. Install Cloud SQL Proxy
 
 Cloud SQL Proxy provides the following functions:
