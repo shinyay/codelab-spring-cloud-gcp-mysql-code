@@ -14,7 +14,7 @@ class EmployeeService(val repository: EmployeeRepository) {
         return result
     }
 
-    fun createEmployee(employee: Employee): Employee {
+    fun registerEmployee(employee: Employee): Employee {
         return repository.save(employee)
     }
 }
