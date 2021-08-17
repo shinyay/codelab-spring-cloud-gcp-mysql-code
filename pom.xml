@@ -18,6 +18,7 @@
 		<kotlin.version>1.5.21</kotlin.version>
 		<spring-cloud-gcp.version>2.0.3</spring-cloud-gcp.version>
 		<spring-cloud.version>2020.0.3</spring-cloud.version>
+		<testcontainers.version>1.15.3</testcontainers.version>
 	</properties>
 	<dependencies>
 		<dependency>
