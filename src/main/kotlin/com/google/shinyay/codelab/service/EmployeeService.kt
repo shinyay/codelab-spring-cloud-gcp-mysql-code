@@ -1,6 +1,7 @@
 package com.google.shinyay.codelab.service
 
 import com.google.shinyay.codelab.entity.Employee
+import com.google.shinyay.codelab.logger
 import com.google.shinyay.codelab.repository.EmployeeRepository
 import org.springframework.stereotype.Service
 
@@ -8,6 +9,8 @@ import org.springframework.stereotype.Service
 class EmployeeService(val repository: EmployeeRepository) {
 
     fun findAllEmployee(): MutableList<Employee> {
-        return repository.findAll()
+        val result = repository.findAll()
+        logger.info(result.toString())
+        return result
     }
 }
