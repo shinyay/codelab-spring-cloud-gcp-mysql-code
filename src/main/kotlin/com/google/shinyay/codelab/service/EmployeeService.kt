@@ -13,4 +13,8 @@ class EmployeeService(val repository: EmployeeRepository) {
         logger.info(result.toString())
         return result
     }
+
+    fun createEmployee(employee: Employee): Employee {
+        return repository.save(employee)
+    }
 }
