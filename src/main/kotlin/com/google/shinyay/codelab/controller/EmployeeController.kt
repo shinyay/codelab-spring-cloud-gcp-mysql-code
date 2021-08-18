@@ -1,7 +1,12 @@
 package com.google.shinyay.codelab.controller
 
-import org.springframework.stereotype.Controller
+import com.google.shinyay.codelab.service.EmployeeService
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RestController
 
-@Controller
-class EmployeeController {
+@RestController
+@RequestMapping("/api/v1")
+class EmployeeController(val service: EmployeeService) {
+
 }
