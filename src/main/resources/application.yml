@@ -12,11 +12,11 @@ spring:
     gcp:
       sql:
         enabled: true
-        instance-connection-name: ${CONNECTION_NAME}
+        instance-connection-name: ${CONNECTION_NAME} # gradlew clean bootRun --args=""--spring.cloud.gcp.sql.instance-connection-name=(gcloud sql instances describe my-mysql --format='value(connectionName)')""
         database-name: codelab
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: ${USER:root}
+    username: ${USERNAME:root}
     password: ${PASSWORD:p@s$w0rd}
   jpa:
     database: mysql
