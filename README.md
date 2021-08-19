@@ -35,6 +35,11 @@ It authorizes gcloud-cli to access the Cloud Platform with Google user credentia
 $ gcloud auth login
 ```
 
+Refresh local Application Default Credentials (ADC), `~/.config/gcloud/application_default_credentials.json`
+```shell
+$ gcloud auth application-default
+```
+
 #### 1.2. Set Project ID
 You can set the default value for gcloud-cli.
 
