@@ -42,7 +42,7 @@ spring:
 spring:
   config:
     activate:
-      on-profile: auto-ddl
+      on-profile: auto-ddl # gradlew clean bootRun --args='--spring.profiles.active=auto-ddl'
   datasource:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:testdb;database_to_upper=false;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
