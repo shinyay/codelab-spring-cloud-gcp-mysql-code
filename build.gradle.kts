@@ -21,7 +21,6 @@ extra["springCloudVersion"] = "2020.0.3"
 extra["testcontainersVersion"] = "1.15.3"
 
 dependencies {
-//	implementation("com.google.cloud:spring-cloud-gcp-starter")
 	implementation("com.google.cloud:spring-cloud-gcp-starter-sql-mysql")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
