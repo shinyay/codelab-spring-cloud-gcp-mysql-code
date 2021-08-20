@@ -18,7 +18,6 @@ repositories {
 
 extra["springCloudGcpVersion"] = "2.0.3"
 extra["springCloudVersion"] = "2020.0.3"
-extra["testcontainersVersion"] = "1.15.3"
 
 dependencies {
 	implementation("com.google.cloud:spring-cloud-gcp-starter-sql-mysql")
@@ -34,7 +33,6 @@ dependencyManagement {
 	imports {
 		mavenBom("com.google.cloud:spring-cloud-gcp-dependencies:${property("springCloudGcpVersion")}")
 		mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
-		mavenBom("org.testcontainers:testcontainers-bom:${property("testcontainersVersion")}")
 	}
 }
 
