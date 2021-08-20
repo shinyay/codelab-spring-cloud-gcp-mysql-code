@@ -8,9 +8,6 @@ This lab shows Spring Cloud GCP with Cloud SQL - MySQL.
 ### Dependencies
 - com.google.cloud
   - `spring-cloud-gcp-starter-sql-mysql`
-- `mysql:mysql-connector-java`
-- `org.testcontainers:junit-jupiter`
-- `org.testcontainers:mysql`
 - org.springframework.boot
   - `spring-boot-starter-data-jpa`
 
