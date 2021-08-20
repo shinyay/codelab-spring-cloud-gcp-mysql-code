@@ -10,6 +10,7 @@ This lab shows Spring Cloud GCP with Cloud SQL - MySQL.
   - `spring-cloud-gcp-starter-sql-mysql`
 - org.springframework.boot
   - `spring-boot-starter-data-jpa`
+  - `spring-boot-starter-web`
 
 ```kotlin
 dependencyManagement {
