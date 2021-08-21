@@ -22,7 +22,7 @@ dependencyManagement {
 }
 ```
 
-### Prerequisite
+### Prerequisite for Cloud SQL - MySQL Instance
 #### 1. Cloud SQL - MySQL Instance
 By the following steps, we will create Cloud SQL - MySQL instance, Database and Table on it.
 
@@ -197,6 +197,9 @@ mysql> show grants for 'mysql-guest'@'%';
 ```shell
 $ gcloud sql instances describe my-mysql --format='value(connectionName)'
 ```
+
+#### (Option) 1.12. Cloud SQL Proxy Docker Image
+
 
 ## Demo
 
