@@ -211,6 +211,16 @@ $ docker run --rm -d \
     -credential_file=/config
 ```
 
+In addition to it, you need to modify the connection configuration as follows:
+
+```yaml
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/${DB_NAME}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+```
+
 ## Demo
 
 ## Features
