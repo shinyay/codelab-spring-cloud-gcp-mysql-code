@@ -200,6 +200,14 @@ $ gcloud sql instances describe my-mysql --format='value(connectionName)'
 
 #### (Option) 1.12. Cloud SQL Proxy Docker Image
 
+```shell
+$ docker run --rm -d \
+    -v ~/.config/gcloud/application_default_credentials.json:/config \
+    -p 127.0.0.1:3306:3306 \
+    gcr.io/cloudsql-docker/gce-proxy:1.24.0 /cloud_sql_proxy \
+    -instances=(gcloud sql instances describe my-mysql --format='value(connectionName)')=tcp:0.0.0.0:3306 \
+    -credential_file=/config
+```
 
 ## Demo
 
