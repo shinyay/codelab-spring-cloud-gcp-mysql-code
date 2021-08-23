@@ -202,6 +202,9 @@ $ gcloud sql instances describe my-mysql --format='value(connectionName)'
 When you use `spring.cloud.gcp.sql.instance-connection-name`, the connection to database instance is created by Cloud SQL Socket Factory with JDBC Driver.
 If you want to create the connection via **Cloud SQL Proxy**, you need to run it beforehand.
 
+You can check the latest Cloud Proxy Docker Image at the following url:
+- [`gcr.io/cloudsql-docker/gce-proxy`](https://gcr.io/cloudsql-docker/gce-proxy)
+
 ```shell
 $ docker run --rm -d \
     -v ~/.config/gcloud/application_default_credentials.json:/config \
