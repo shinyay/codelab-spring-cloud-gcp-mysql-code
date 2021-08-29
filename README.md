@@ -201,6 +201,11 @@ $ gcloud sql instances describe my-mysql --format='value(connectionName)'
 ### Spring Cloud GCP for Cloud SQL - MySQL
 #### 2. Application Configuration
 
+|Property name|Description|Default|
+|-------------|-----------|-------|
+|spring.cloud.gcp.sql.enabled|Enables or disables Cloud SQL auto configuration|true|
+
+
 
 #### (Option) 1.12. Cloud SQL Proxy Docker Image
 When you use `spring.cloud.gcp.sql.instance-connection-name`, the connection to database instance is created by Cloud SQL Socket Factory with JDBC Driver.
