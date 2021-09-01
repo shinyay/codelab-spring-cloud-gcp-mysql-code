@@ -200,6 +200,9 @@ $ gcloud sql instances describe my-mysql --format='value(connectionName)'
 
 ### Spring Cloud GCP for Cloud SQL - MySQL
 #### 2. Application Configuration
+If you have already had an application linked with MySQL, all you have to do is the modification properties for Google Cloud.
+
+
 
 |Property name|Description|Default|
 |-------------|-----------|-------|
