@@ -261,6 +261,11 @@ $ gcloud projects get-iam-policy (gcloud config get-value project)
 ```
 
 #### 2.4. Create a Service Key
+The following command creates a private key for a service account.
+```shell
+$ gcloud iam service-accounts keys create ${OUTPUT_FILE_NAME} \
+    --iam-account ${SERVICE_ACCOUNT_EMAIL}
+```
 
 > [gcloud iam service-accounts keys create](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/keys/create)
 
