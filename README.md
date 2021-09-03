@@ -237,6 +237,14 @@ $ gcloud iam service-accounts list --filter 'displayName:Spring Cloud GCP' --for
 spring-cloud-gcp@my-project-id.iam.gserviceaccount.com
 ```
 
+#### 2.3. Grant Service Account to Resource
+
+```shell
+$ gcloud projects add-iam-policy-binding ${PROJECT_ID} \
+    --member serviceAccount:${SERVICE_ACCOUNT_EMAIL} \
+    --role ${ROLE}
+```
+
 
 #### (Option) 1.12. Cloud SQL Proxy Docker Image
 When you use `spring.cloud.gcp.sql.instance-connection-name`, the connection to database instance is created by Cloud SQL Socket Factory with JDBC Driver.
