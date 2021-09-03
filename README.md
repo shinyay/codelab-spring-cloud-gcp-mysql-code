@@ -207,12 +207,18 @@ If you have already had an application linked with MySQL, all you have to do is 
 
 |Property name|Description|Default|
 |-------------|-----------|-------|
-|spring.cloud.gcp.sql||-|
+|spring.cloud.gcp.sql|-|-|
 |enabled|Enables or disables Cloud SQL auto configuration|true|
 |database-name|Name of the database to connect to|-|
 |instance-connection-name|`project-id`:`region`:`instance-name`<br>`$ gcloud sql instances describe my-mysql --format='value(connectionName)'`|-|
 |credentials.location|File system path to the Google OAuth2 credentials private key file|Default credentials by Spring Cloud GCP|
 |credentials.encoded-key|Base64-encoded contents of OAuth2 account private key in JSON format|Default credentials by Spring Cloud GCP|
+
+#### 2.2. Create Service Account
+The following command creates a service account with the provided name.
+```shell
+$ gcloud iam service-accounts create ${SERVICE_ACCOUNT_NAME} --display-name "DISPLAY_NAME"
+```
 
 #### (Option) 1.12. Cloud SQL Proxy Docker Image
 When you use `spring.cloud.gcp.sql.instance-connection-name`, the connection to database instance is created by Cloud SQL Socket Factory with JDBC Driver.
