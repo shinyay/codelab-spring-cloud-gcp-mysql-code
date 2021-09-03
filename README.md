@@ -248,11 +248,16 @@ $ gcloud projects add-iam-policy-binding ${PROJECT_ID} \
 > [gcloud projects add-iam-policy-binding](https://cloud.google.com/sdk/gcloud/reference/projects/add-iam-policy-binding)
 
 ##### Sample
-
+Bind a service account and a role
 ```shell
 $ gcloud projects add-iam-policy-binding (gcloud config get-value project) \
     --member serviceAccount:(gcloud iam service-accounts list --filter 'displayName:Spring Cloud GCP' --format 'value(email)') \
     --role roles/editor
+```
+
+Confirm a policy binding
+```shell
+$ gcloud projects get-iam-policy (gcloud config get-value project)
 ```
 
 #### (Option) 1.12. Cloud SQL Proxy Docker Image
