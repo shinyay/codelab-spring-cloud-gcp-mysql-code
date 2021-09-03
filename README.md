@@ -223,10 +223,18 @@ $ gcloud iam service-accounts create ${SERVICE_ACCOUNT_NAME} --display-name "DIS
 > [gcloud iam service-accounts create](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/create)
 
 ##### Sample
+Create a service account `spring-cloud-gcp`
 ```shell
 $ gcloud iam service-accounts create spring-cloud-gcp --display-name "Spring Cloud GCP"
 
 Created service account [spring-cloud-gcp].
+```
+
+Confirm a service account
+```shell
+$ gcloud iam service-accounts list --filter 'displayName:Spring Cloud GCP' --format 'value(email)'
+
+spring-cloud-gcp@my-project-id.iam.gserviceaccount.com
 ```
 
 
