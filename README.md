@@ -247,6 +247,14 @@ $ gcloud projects add-iam-policy-binding ${PROJECT_ID} \
 
 > [gcloud projects add-iam-policy-binding](https://cloud.google.com/sdk/gcloud/reference/projects/add-iam-policy-binding)
 
+##### Sample
+
+```shell
+$ gcloud projects add-iam-policy-binding (gcloud config get-value project) \
+    --member serviceAccount:(gcloud iam service-accounts list --filter 'displayName:Spring Cloud GCP' --format 'value(email)') \
+    --role roles/editor
+```
+
 #### (Option) 1.12. Cloud SQL Proxy Docker Image
 When you use `spring.cloud.gcp.sql.instance-connection-name`, the connection to database instance is created by Cloud SQL Socket Factory with JDBC Driver.
 If you want to create the connection via **Cloud SQL Proxy**, you need to run it beforehand.
