@@ -220,6 +220,16 @@ The following command creates a service account with the provided name.
 $ gcloud iam service-accounts create ${SERVICE_ACCOUNT_NAME} --display-name "DISPLAY_NAME"
 ```
 
+> [gcloud iam service-accounts create](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/create)
+
+##### Sample
+```shell
+$ gcloud iam service-accounts create spring-cloud-gcp --display-name "Spring Cloud GCP"
+
+Created service account [spring-cloud-gcp].
+```
+
+
 #### (Option) 1.12. Cloud SQL Proxy Docker Image
 When you use `spring.cloud.gcp.sql.instance-connection-name`, the connection to database instance is created by Cloud SQL Socket Factory with JDBC Driver.
 If you want to create the connection via **Cloud SQL Proxy**, you need to run it beforehand.
