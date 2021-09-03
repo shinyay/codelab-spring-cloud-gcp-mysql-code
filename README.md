@@ -238,13 +238,14 @@ spring-cloud-gcp@my-project-id.iam.gserviceaccount.com
 ```
 
 #### 2.3. Grant Service Account to Resource
-
+The following command adds an IAM policy binding for the role to the service account.
 ```shell
 $ gcloud projects add-iam-policy-binding ${PROJECT_ID} \
     --member serviceAccount:${SERVICE_ACCOUNT_EMAIL} \
     --role ${ROLE}
 ```
 
+> [gcloud projects add-iam-policy-binding](https://cloud.google.com/sdk/gcloud/reference/projects/add-iam-policy-binding)
 
 #### (Option) 1.12. Cloud SQL Proxy Docker Image
 When you use `spring.cloud.gcp.sql.instance-connection-name`, the connection to database instance is created by Cloud SQL Socket Factory with JDBC Driver.
