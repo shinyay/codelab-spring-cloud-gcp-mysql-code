@@ -269,6 +269,13 @@ $ gcloud iam service-accounts keys create ${OUTPUT_FILE_NAME} \
 
 > [gcloud iam service-accounts keys create](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/keys/create)
 
+##### Sample
+
+```shell
+$ gcloud iam service-accounts keys create key.json \
+  --iam-account (gcloud iam service-accounts list --filter 'displayName:Spring Cloud GCP' --format 'value(email)')
+```
+
 #### (Option) 1.12. Cloud SQL Proxy Docker Image
 When you use `spring.cloud.gcp.sql.instance-connection-name`, the connection to database instance is created by Cloud SQL Socket Factory with JDBC Driver.
 If you want to create the connection via **Cloud SQL Proxy**, you need to run it beforehand.
