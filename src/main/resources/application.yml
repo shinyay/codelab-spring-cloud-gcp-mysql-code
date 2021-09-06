@@ -17,6 +17,7 @@ spring:
 #        credentials:
 #          location: classpath:credential/key.json
 #          location: file:/codelab-spring-cloud-gcp-mysql-code/key.json
+#          encoded-key: ewogI....gp9Cg== # base64 key.json
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: ${USERNAME:root}
