@@ -281,6 +281,13 @@ Confirm Private Key in the file
 $ cat key.json | jq -r '.private_key'
 ```
 
+#### 2.5. Encode a Service Account Key
+Encode a service key file
+```shell
+$ base64 cat key.json
+```
+
+
 #### (Option) 1.12. Cloud SQL Proxy Docker Image
 When you use `spring.cloud.gcp.sql.instance-connection-name`, the connection to database instance is created by Cloud SQL Socket Factory with JDBC Driver.
 If you want to create the connection via **Cloud SQL Proxy**, you need to run it beforehand.
