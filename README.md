@@ -287,6 +287,10 @@ Encode a service key file
 $ base64 cat key.json
 ```
 
+#### 2.6. Run a App
+```shell
+$ ./gradlew clean bootRun --args=""--spring.cloud.gcp.sql.instance-connection-name=(gcloud sql instances describe my-mysql --format='value(connectionName)')""
+```
 
 #### (Option) 1.12. Cloud SQL Proxy Docker Image
 When you use `spring.cloud.gcp.sql.instance-connection-name`, the connection to database instance is created by Cloud SQL Socket Factory with JDBC Driver.
