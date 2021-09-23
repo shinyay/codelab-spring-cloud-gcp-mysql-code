@@ -35,7 +35,7 @@ $ gcloud auth login
 
 Refresh local Application Default Credentials (ADC), `~/.config/gcloud/application_default_credentials.json`
 ```shell
-$ gcloud auth application-default
+$ gcloud auth application-default login
 ```
 
 #### 1.2. Set Project ID
