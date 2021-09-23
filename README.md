@@ -284,7 +284,7 @@ $ cat key.json | jq -r '.private_key'
 #### 2.5. Encode a Service Account Key
 Encode a service key file
 ```shell
-$ base64 cat key.json
+$ base64 key.json
 ```
 
 #### 2.6. Run a App
